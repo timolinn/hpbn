@@ -21,3 +21,7 @@
 + On Unix platforms the tool can be run from the command line via traceroute `"(traceroute google.com)"`, and on Windows it is known as tracert.
 + We can improve bandwidth by implementing multiple strategies, one of which is to add more fibre links.
 + However, improving latency is a different story, simply because there is no way around the laws of physics, given that we cannot make light faster than it is already. Since optic fibre cables already transport data at the speed of about 200, 000, 000 metres per second. That is ~2/3 the speed of light, as engineers the best we can do to improve the performance of our applications is to architect and optimize our protocols and networking code with explicit awareness of the limitations of available bandwidth and the speed of light: we need to reduce round trips, move the data closer to the client, and build applications that can hide the latency through caching, pre-fetching etc.
+
+## Building blocks of TCP (Transmisson Control Protocol)
+
+At the heart of the internet is the IP and TCP. The IP or Internet Protocol is what provides host-to-host routing and addressing. TCP is what provides abstraction of a reliable network running over an unreliable channel.

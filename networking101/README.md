@@ -60,3 +60,10 @@
 + Position servers closer to the user to reduce roundtrip times.
 + Reuse TCP connections whenever possible.
 + Investigate "TCP Tuning for HTTP" recommendations.
+
+## Building blocks of UDP (User Datagram Protocol)
+
++ Introduced by Jon Postel in 1980, UDP is colloquially referred to as a _null protocol_, and **RFC 768**, whuck describes its operation, could indeed fit into a napkin.
++ **Datagram:** A self-contained, independent entity of data carrying sufficient information to be routed from the source to the destination nodes without reliance on earlier exchanges between the nodes and the transporting network.
++ UDP is sometimes called **Unreliable Datagram Protocol**, which generally refers to no delivery guarantees, no failure notification etc.
++ **DNS** is one of the most well known UDP implementation. **WebRTC** is also implemented with UDP.
